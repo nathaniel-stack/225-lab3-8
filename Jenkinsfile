@@ -4,8 +4,8 @@ pipeline {
     environment {
         // Store environment variables used throughout the pipeline
         DOCKER_CREDENTIALS_ID = 'roseaw-dockerhub'        // Jenkins credential ID for authenticating with Docker Hub
-        GITHUB_URL = 'https://github.com/miamioh-cit/225-lab3-8.git'  // GitHub repository containing Kubernetes YAML files
-        KUBECONFIG = credentials('roseaw-225')             // Jenkins stored credential for accessing your Kubernetes cluster
+        GITHUB_URL = 'https://github.com/nathaniel-stack/225-lab3-8.git'  // GitHub repository containing Kubernetes YAML files
+        KUBECONFIG = credentials('nolen-225')             // Jenkins stored credential for accessing your Kubernetes cluster
     }
 
     stages {
